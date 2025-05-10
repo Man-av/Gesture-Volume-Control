@@ -33,3 +33,6 @@ You can install dependencies using:
 
 ```bash
 pip install opencv-python mediapipe pycaw comtypes numpy
+
+📌 Note
+This version does not use AI or machine learning models, but uses rule-based logic and MediaPipe's pre-trained hand detection.
