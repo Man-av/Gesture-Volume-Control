@@ -1,38 +1,31 @@
-# Hand Gesture-Based Volume Control
+# Hand Gesture Volume Control
 
-This project is a real-time system that uses hand gestures to control the system volume. It leverages **MediaPipe** for hand tracking, **OpenCV** for webcam input, and **Pycaw** to interface with the system's audio control.
+This project allows you to control your system's volume using hand gestures. Using **MediaPipe** for hand tracking and **OpenCV** for webcam input, the system adjusts the volume based on the distance between your thumb and index finger.
 
-## ✨ Features
-- Detects thumbs-up gesture to start volume control
-- Detects thumbs-down gesture to stop volume control
-- Adjusts system volume based on the distance between thumb and index finger
-- Real-time feedback with visual landmarks on webcam feed
+## Features
+- Detects **Thumbs-Up** gesture to activate volume control.
+- Detects **Thumbs-Down** gesture to deactivate volume control.
+- Adjusts volume based on the distance between the thumb and index finger.
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python
 - MediaPipe
 - OpenCV
 - Pycaw
-- NumPy
-- comtypes (for audio interface)
 
-## 🚀 How It Works
-1. The system waits for a thumbs-up gesture to activate.
-2. Once active, it calculates the distance between thumb and index finger to control volume.
-3. A thumbs-down gesture stops the control loop.
-4. The ESC key can also be used to exit the application.
+## Installation
+1. Install Python 3.12
+2. Install the required libraries:
+    ```bash
+    pip install opencv-python mediapipe pycaw numpy
+    ```
 
-## 🔧 Requirements
-- Python 3.12
-- OpenCV
-- MediaPipe
-- Pycaw
-- comtypes
+## How to Use
+1. Run the script.
+2. Show a **Thumbs-Up** to start controlling the volume.
+3. Show a **Thumbs-Down** to stop volume control.
+4. Press **ESC** to exit the application.
 
-You can install dependencies using:
+## Note
+This project does **not** use AI or machine learning models; it relies on **MediaPipe's pre-trained hand detection model** and **rule-based logic** for gesture recognition.
 
-```bash
-pip install opencv-python mediapipe pycaw comtypes numpy
-
-📌 Note
-This version does not use AI or machine learning models, but uses rule-based logic and MediaPipe's pre-trained hand detection.
